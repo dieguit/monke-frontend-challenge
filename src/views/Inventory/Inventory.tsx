@@ -24,7 +24,7 @@ const Inventory = () => {
         <InventoryItemsLoading />
       ) : (
         <div
-          className="flex w-full flex-col flex-wrap gap-4 md:flex-row"
+          className="w-full grid-cols-1 md:grid-cols-3 grid gap-4"
           data-testid="div-models-list"
         >
           {models?.map((model) => (

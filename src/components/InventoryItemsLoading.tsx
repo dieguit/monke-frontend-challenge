@@ -2,11 +2,11 @@ import Card from "./Card";
 
 const InventoryItemsLoading = () => (
   <div
-    className="flex w-full flex-col flex-wrap gap-4 md:flex-row"
+    className="w-full grid-cols-1 md:grid-cols-3 grid gap-4"
     data-testid="div-inventory-items-loading"
   >
     {[1, 2, 3].map((i) => (
-      <Card key={i} className="h-16 basis-1/6 p-4 ">
+      <Card key={i} className="h-16 basis-1/3 p-4 ">
         <div className="flex animate-pulse space-x-4">
           <div className="flex-1 space-y-2 py-2">
             <div className="space-y-3">
